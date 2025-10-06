@@ -1,11 +1,10 @@
 harga_normal = 50000
 usia = int(input("Masukkan usia anda: "))
-status_pelajar = input("Apakah anda pelajar SMA? (ya/tidak): ")
-kartu_pelajar = input("Apakah anda memiliki kartu pelajar? (ya/tidak): ")
+status_pelajar = input("Apakah anda pelajar SMA? (ya/tidak): ").lower()
 hari = input("Masukkan hari kunjungan (Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu): ")
 if usia < 12:
     diskon = 0.5
-elif status_pelajar == "ya" and kartu_pelajar == "ya":
+elif status_pelajar == "ya":
     diskon = 0.3
 elif hari == "selasa":
     diskon = 0.2
