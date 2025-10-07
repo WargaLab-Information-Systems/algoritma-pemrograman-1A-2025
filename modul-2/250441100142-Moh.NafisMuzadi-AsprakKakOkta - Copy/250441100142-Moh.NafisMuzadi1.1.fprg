@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="250441100142-Moh.NafisMuzadi-AsprakKakOkta"/>
+        <attribute name="authors" value="NAFIS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-06 01:12:49 PM"/>
+        <attribute name="created" value="TkFGSVM7TEFQVE9QLUExMjZLUFAxOzIwMjUtMTAtMDI7MDk6NTg6MDcgUE07MjY2NQ=="/>
+        <attribute name="edited" value="TkFGSVM7TEFQVE9QLUExMjZLUFAxOzIwMjUtMTAtMDY7MDE6MTI6NDkgUE07MjsyNzY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai, kehadiran" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai :&quot;" newline="True"/>
+            <input variable="nilai"/>
+            <output expression="&quot;Masukkan kehadiran :&quot;" newline="True"/>
+            <input variable="kehadiran"/>
+            <if expression="nilai &gt; 84">
+                <then>
+                    <output expression="&quot;Anda mendapat nilai A&quot;" newline="True"/>
+                    <if expression="kehadiran &gt; 89">
+                        <then>
+                            <output expression="&quot;Lulus dengan Pujian&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Anda mendapat nilai A&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="nilai &gt; 69">
+                        <then>
+                            <output expression="&quot;Anda mendapat nilai B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="nilai &gt; 59">
+                                <then>
+                                    <output expression="&quot;Anda mendapat nilai C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="nilai &gt; 49">
+                                        <then>
+                                            <output expression="&quot;Anda mendapat nilai D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Anda mendapat nilai E&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
