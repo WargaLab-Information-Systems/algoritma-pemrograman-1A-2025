@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reno Irvansyah - Praktikum ALPRO - Penyeleksian Kondisi - Soal 1"/>
+        <attribute name="authors" value="Reno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-06 05:45:04 PM"/>
+        <attribute name="created" value="UmVubztWQVNZQUg7MjAyNS0xMC0wMzswODo1Mjo0MSBBTTsyMTI2"/>
+        <attribute name="edited" value="UmVubztWQVNZQUg7MjAyNS0xMC0wNjswNTo0NTowNCBQTTsyOzIyNTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai, kehadiran, totalHadir" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Nilai Ujian : &quot;" newline="True"/>
+            <input variable="nilai"/>
+            <assign variable="totalHadir" expression="16"/>
+            <output expression="&quot;total pertemuan ada 16 pertemuan&quot;" newline="True"/>
+            <output expression="&quot;Masukkan nilai kehadiran : (maks 16)&quot;" newline="True"/>
+            <input variable="kehadiran"/>
+            <assign variable="kehadiran" expression="(kehadiran * 100) / totalHadir"/>
+            <if expression="nilai &gt; 85">
+                <then>
+                    <output expression="&quot;Nilai A&quot;" newline="True"/>
+                    <if expression="nilai &gt;= 85 and kehadiran &gt;= 90">
+                        <then>
+                            <output expression="&quot;lulus dengan pujian&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="nilai &gt;=70 and nilai &lt;=84">
+                        <then>
+                            <output expression="&quot;Nilai B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="nilai &gt;= 60 and nilai &lt;= 69">
+                                <then>
+                                    <output expression="&quot;Nilai C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="nilai &gt;= 50 and nilai &lt;=59">
+                                        <then>
+                                            <output expression="&quot;Nilai D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Nilai E&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
