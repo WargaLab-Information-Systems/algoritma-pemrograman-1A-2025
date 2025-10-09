@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tugas Praktikum Alpro Modul 2 No 1"/>
+        <attribute name="authors" value="D_C MDR"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-03 08:34:19 AM"/>
+        <attribute name="created" value="RF9DIE1EUjtSQUtJTkFQQU5ESU5JUkk7MjAyNS0xMC0wMzswODoyMzo1OSBBTTsyODY2"/>
+        <attribute name="edited" value="RF9DIE1EUjtSQUtJTkFQQU5ESU5JUkk7MjAyNS0xMC0wMzswODozNDoxOSBBTTsxOzI5NzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai" type="Integer" array="False" size=""/>
+            <declare name="kehadiran" type="Integer" array="False" size=""/>
+            <declare name="keterangan" type="String" array="False" size=""/>
+            <declare name="status" type="String" array="False" size=""/>
+            <declare name="lulus" type="String" array="False" size=""/>
+            <output expression="&quot;masukkan keterangan nilai&quot;" newline="True"/>
+            <input variable="nilai"/>
+            <output expression="&quot;masukkan nilai kehadiran&quot;" newline="True"/>
+            <input variable="kehadiran"/>
+            <if expression="nilai &gt; 85">
+                <then>
+                    <assign variable="status" expression="&quot;lulus&quot;"/>
+                    <assign variable="keterangan" expression="&quot;A&quot;"/>
+                    <output expression="keterangan &amp; &quot;lulus&quot;" newline="True"/>
+                    <if expression="nilai &gt;= 85 and nilai &gt;= 90">
+                        <then>
+                            <output expression="&quot;Lulus dengan Pujian&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="nilai &gt;= 70">
+                        <then>
+                            <assign variable="keterangan" expression="&quot;B&quot;"/>
+                            <output expression="keterangan" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="nilai &gt;= 60">
+                                <then>
+                                    <assign variable="keterangan" expression="&quot;C&quot;"/>
+                                    <output expression="keterangan" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="nilai &gt;= 50">
+                                        <then>
+                                            <assign variable="keterangan" expression="&quot;D&quot;"/>
+                                            <output expression="keterangan" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="keterangan" expression="&quot;E&quot;"/>
+                                            <output expression="keterangan" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
