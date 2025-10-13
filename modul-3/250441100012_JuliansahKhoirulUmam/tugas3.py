@@ -1,10 +1,10 @@
 print("="*15," Tugas 3 Program Analisis Kalimat ","="*15)
 
 # Inputan Pengguna 
-k = input("Masukkan Sebuah Kalimat : ")
+k = input("Masukkan Sebuah Kalimat : ").lower()
 
 #variabel Pandangan 
-vokal = "aiueo AIUEO"
+vokal = "aiueo"
 jv = 0
 jko = 0 
 
