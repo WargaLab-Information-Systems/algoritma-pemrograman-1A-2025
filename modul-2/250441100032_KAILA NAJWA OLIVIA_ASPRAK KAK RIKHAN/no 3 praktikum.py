@@ -26,4 +26,4 @@ else :
             sisa_jam * 3000 + 20000
 
 #print hasil
-print(f"jadi total biaya parkir sebesar : Rp {biaya}")
+print(f"jadi total biaya parkir sebesar: Rp {biaya}")
