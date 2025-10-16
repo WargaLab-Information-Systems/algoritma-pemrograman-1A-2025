@@ -1,10 +1,12 @@
+import math
 bola_merah = 8
 bola_biru = 6
-total = bola_merah + bola_biru
-
-#jumlah bola yang diambil
 diambil = 3
 
-kombinasi = total * (total-1)* (total-2) // 6
+total_bola = bola_merah + bola_biru
+kombinasi = math.comb(total_bola, diambil)
 
-print("menghitung berapa banyak kemungkinan kombinasi bola yang dapat diambil:", kombinasi)
+print(f"Jumlah Bola Marah: {bola_merah}")
+print(f"Jumlah Bola Biru: {bola_biru}")
+print(f"Total Bola: {total_bola} ")
+print(f"Total Kombinasi: {kombinasi} ")

@@ -3,7 +3,7 @@
 #Lebar = 6 cm
 #Tinggi = 4 cm
 
-#data balok
+#jawaban no 2
 panjang = float(input("Masukkan panjang balok (cm): "))
 lebar = float(input("Masukkan lebar balok (cm): "))
 tinggi = float(input("Masukkan tinggi balok (cm): "))
