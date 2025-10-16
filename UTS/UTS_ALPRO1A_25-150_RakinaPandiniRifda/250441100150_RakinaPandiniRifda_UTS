@@ -1,0 +1,31 @@
+# Keterangan barang beserta harganya
+Beras = 12000
+Gula = 14000
+Minyak = 20000
+
+# Memasukkan jenis barang, harga
+barang = input("Masukkan barang:")
+harga = input("Masukkan harga barang:")
+
+# Perhitungan Total Belanja
+diskon = 0.10 # Jika total belanja > 100000
+diskon = 0.15 # Jika total belanja > 150000
+diskon = 0.5 # Jika memakai member card
+total_belanja = barang + harga
+
+while "iya" or "tidak":
+    if (barang) > 1:
+        print("Masukkan barang:")
+        harga("Masukkan harga:")
+        total_belanja = barang + harga
+
+if total_belanja > 100000:
+    print("diskon 0.10")
+    if total_belanja > 150000:
+        print("diskon 0,5")
+    elif total_belanja > 200000:
+        print("diskon 0,15")
+else:
+    print("diskon 0,5")
+print("Total Belanja Anda:",total_belanja)
+print("Apakah anda ingin melakukan transaksi kembali? (iya/tidak)")
