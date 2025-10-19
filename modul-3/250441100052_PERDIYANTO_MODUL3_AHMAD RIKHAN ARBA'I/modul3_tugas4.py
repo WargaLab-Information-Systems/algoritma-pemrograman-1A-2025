@@ -9,7 +9,7 @@ while x > 0:
         nama_barang = input(f"masukkan nama barang ke - {i} ")
         harga = int(input(f"masukkan harga barang ke - {i} "))
         total += harga
-        daftar += f" nama brang {nama_barang} Rp : {harga}"
+        daftar += f" nama barang {nama_barang} Rp : {harga}"
     print("="*5," STRUK ", "="*5)
     print("Nama Pembeli :", nama)
     print("Daftar barang :")
