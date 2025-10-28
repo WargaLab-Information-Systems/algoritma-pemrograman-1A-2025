@@ -1,1 +1,0 @@
-Pertama saya membuat variabel "i" yang bertipe data integer, dan berisi angka 0, lalu saya membuat output nama toko dan list harga barang, lalu saya mulai membuat kodenya, yang menggunakan dua perulangan while, while pertama untuk mengulang seluruh program jika ada pembeli lagi, lalu while kedua digunakan untuk mengisi.
