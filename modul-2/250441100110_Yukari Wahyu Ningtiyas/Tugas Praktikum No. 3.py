@@ -3,7 +3,7 @@
 jam = int(input("Masukkan lama parkir (jam) : "))
 vip = input("Apakah VIP (ya/tidak) ? ")
 
-# Jika VIP maka tidak dikenakan biaya = 0
+# Jika VIP maka gratis
 if vip == "ya":
     biaya = 0
 else:
