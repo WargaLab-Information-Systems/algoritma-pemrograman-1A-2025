@@ -9,4 +9,4 @@ pembilang = 14*13*12
 penyebut = 3*2*1
 kombinasi = pembilang//penyebut
 
-print("kombinasi 3 bola adalah ", kombinasi)
+print("Jumlah kombinasi yang mungkin :", kombinasi)
