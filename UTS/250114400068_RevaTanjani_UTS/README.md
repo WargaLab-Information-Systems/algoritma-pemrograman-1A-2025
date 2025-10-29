@@ -1,0 +1,1 @@
+program Kasir Toko Sembako “Maju Jaya” yang dapat menghitung total belanja pelanggan, pertama membuat variabel ulang yang berisikan string "y" dan variabel harga dan diskon ,saya memamkai perulangan while berfungsi untuk membuat perulangan jika ada lagi yang akan dibeli lalu saya mentotalkan semua harga yang telah dubeli. kedua saya membuat proram untuk diskon
