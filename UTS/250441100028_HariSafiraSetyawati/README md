@@ -1,0 +1,1 @@
+Program ini menjalankan tentang program kasir toko sembako. Dengan menginput 3 jenis barang yakni beras, gula dan minyak. Pelanggan akan diberi diskon jika total belanja lebih dari 100000 sebesar 10% dan jika total belanja lebih dari 200000 sebesar 15%. Program akan otomatis memotong harga untuk mengeluarkan diskon.
