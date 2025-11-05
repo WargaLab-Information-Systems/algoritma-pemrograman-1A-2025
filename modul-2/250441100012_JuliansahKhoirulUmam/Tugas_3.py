@@ -2,7 +2,7 @@ print("="*10,"TUGAS 3 TARIF PARKIR MALL","="*10)
 
 #inputan pengguna
 parkir = int(input("Berapa Jam Anda Parkir Di Mall : "))
-status = input(("Apakah Ada Member VIP (y/t)"))
+status = input(("Apakah Ada Member VIP (y/t)")).lower()
 
 #menghitung tarif
 if status == "y" :
