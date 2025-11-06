@@ -18,9 +18,6 @@ for j in range(2,n + 1):
     if Prima:
         print(j, end=" ") # End Untuk Menambah sepasi Dari print
 
-
-
-
 #Biasakan Mengerjakan Soal cerita untuk latihan 
 
 # for i in range(2,10,2):
