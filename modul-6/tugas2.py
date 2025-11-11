@@ -1,23 +1,27 @@
-def gabung_tuple(t1, t2):
-    # Gabungkan dua tuple
-    gabung = list(t1) + list(t2)
+def gabung_tuple_dinamis():
+    print("Program Gabung Tuple Dinamis")
+
+    t1 = tuple(map(int, input("Masukkan angka): ").split()))
+
+    t2 = tuple(map(int, input("Masukkan angka): ").split()))
+
+    gabung = (t1) + (t2)
     hasil = []
 
-    # Hapus duplikat, tapi urutan pertama tetap
+    # hapus duplikat
     for x in gabung:
         if x not in hasil:
             hasil.append(x)
 
-    # Urutkan manual secara menurun (descending)
+    # urutkan manual (descending karena syarat: hasil[i] < hasil[j])
     for i in range(len(hasil)):
         for j in range(i + 1, len(hasil)):
-            if hasil[i] < hasil[j]:
+            if hasil[i] > hasil[j]:
                 hasil[i], hasil[j] = hasil[j], hasil[i]
 
     return tuple(hasil)
 
-# Contoh
-t1 = (3, 1, 4)
-t2 = (1, 5, 9)
-print(gabung_tuple(t1, t2))
+
+print("Hasil:", gabung_tuple_dinamis())
+
 

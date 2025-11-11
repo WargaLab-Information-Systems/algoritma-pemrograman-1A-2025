@@ -1,63 +1,74 @@
-# Program Dominic Szoboszlai
-# CRUD list angka dan cek apakah bisa dibagi jadi dua bagian dengan jumlah sama
-
-# List utama untuk menyimpan data angka
 data_angka = []
 
-# Fungsi CREATE - tambah angka
-def tambah_data(angka):
-    data_angka.append(angka)
-
-# Fungsi READ - tampilkan semua angka
-def tampil_data():
-    print("Data angka:", data_angka)
-
-# Fungsi UPDATE - ubah angka berdasarkan index
-def ubah_data(index, angka_baru):
-    if 0 <= index < len(data_angka):
-        data_angka[index] = angka_baru
+def create():
+    n = int(input("Masukkan angka baru: "))
+    data_angka.append(n)
+    print("Angka berhasil ditambahkan!\n")
+ 
+def read():
+    if len(data_angka) == 0:
+        print("Belum ada data.\n")
     else:
-        print("Index tidak valid!")
+        print("Daftar angka saat ini:", data_angka, "\n")
 
-# Fungsi DELETE - hapus angka berdasarkan index
-def hapus_data(index):
-    if 0 <= index < len(data_angka):
-        data_angka.pop(index)
+def update():
+    read()
+    indeks = int(input("Masukkan indeks yang ingin diubah (mulai dari 0): "))
+    if indeks < 0 or indeks >= len(data_angka):
+        print("Indeks tidak valid!\n")
     else:
-        print("Index tidak valid!")
+        nilai_baru = int(input("Masukkan nilai baru: "))
+        data_angka[indeks] = nilai_baru
+        print("Data berhasil diubah!\n")
 
-# Fungsi CEK PEMBAGIAN menjadi dua bagian dengan jumlah sama
-def cek_pembagian():
+def delete():
+    read()
+    indeks = int(input("Masukkan indeks yang ingin dihapus: "))
+    if indeks < 0 or indeks >= len(data_angka):
+        print("Indeks tidak valid!\n")
+    else:
+        del data_angka[indeks]
+        print("Data berhasil dihapus!\n")
+
+def cek_pembagian_sama():
+    read()
+
     total = 0
-    for x in data_angka:   # hitung total manual tanpa sum()
-        total += x
+    for i in data_angka:
+        total += i
 
-    # Jika total ganjil, pasti tidak bisa dibagi dua sama besar
     if total % 2 != 0:
-        print("False (tidak bisa dibagi dua bagian sama besar)")
+        print("Hasil: False (Jumlah total tidak bisa dibagi dua sama rata)\n")
         return
 
-    setengah = total // 2
+    target = total // 2
     jumlah = 0
-    # coba cari kombinasi bagian pertama yang jumlahnya sama dengan setengah total
-    for x in data_angka:
-        jumlah += x
-        if jumlah == setengah:
-            print("True (bisa dibagi dua bagian dengan jumlah sama)")
-            return
-    print("False (tidak bisa dibagi dua bagian sama besar)")
 
-tambah_data(1)
-tambah_data(2)
-tambah_data(3)
-tambah_data(2)
-tampil_data()        # [1, 2, 3, 2]
+    for i in range(len(data_angka)):
+        jumlah += data_angka[i]
+        if jumlah == target:
+            print("Hasil: True (Dapat dibagi menjadi dua bagian dengan jumlah sama)\n")
+            return i
 
-cek_pembagian()      # True karena [1,2,3] dan [2] keduanya berjumlah 6/2=3
+    print("Hasil: False (Tidak dapat dibagi menjadi dua bagian dengan jumlah sama)\n")
 
-ubah_data(1, 5)      # ubah index ke-1 dari 2 jadi 5
-tampil_data()        # [1, 5, 3, 2]
-cek_pembagian()      # False
 
-hapus_data(2)        # hapus angka index ke-2
-tampil_data()
+while True:
+    print("1. Tambah Angka\n2. Lihat Angka\n3. Ubah Angka\n4. Hapus Angka\n5. Pembagian Sama\n6. Keluar")
+    pilih = input("Pilih menu (1-6): ")
+
+    if pilih == "1":
+        create()
+    elif pilih == "2":
+        read()
+    elif pilih == "3":
+        update()
+    elif pilih == "4":
+        delete()
+    elif pilih == "5":
+        cek_pembagian_sama()
+    elif pilih == "6":
+        print("SeeYouu")
+        break
+    else:
+        print("Pilihan tidak valid!\n")
