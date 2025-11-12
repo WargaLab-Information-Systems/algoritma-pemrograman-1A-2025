@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tugas lapres modul2"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-07 01:28:12 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUk0NzcyQ1M7MjAyNS0xMC0wMjsxMToyMTo0OSBQTTsyNzA3"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUk0NzcyQ1M7MjAyNS0xMC0wNzswMToyODoxMiBQTTsyOzI4MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, f" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan nilai ujian&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;=85 AND n&lt;=100">
+                <then>
+                    <output expression="&quot;masukkan persentase kehadiran&quot;" newline="True"/>
+                    <input variable="f"/>
+                    <if expression="f&gt;=90">
+                        <then>
+                            <output expression="&quot;lulus dengan pujian&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="f&lt;90">
+                                <then>
+                                    <output expression="&quot;A&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="n&gt;=70 AND n&lt;=84">
+                        <then>
+                            <output expression="&quot;B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="n&gt;=60 AND n&lt;=69">
+                                <then>
+                                    <output expression="&quot;C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="n&gt;=50 AND n&lt;=59">
+                                        <then>
+                                            <output expression="&quot;D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;E&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
