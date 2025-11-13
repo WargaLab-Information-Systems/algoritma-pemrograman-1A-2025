@@ -1,0 +1,3 @@
+sebelumnya saya membuat variabel beras,minyak,gula sebagai wadah untuk harga dari setiap jenis barang
+
+Disini saya menggunakan perulangan for untuk mengulangi berapa kali program akan diulang, ketika pengguna menginput jumlah perulangan maka program akan diulang sesuai jumlah yang diminta, kemudian pengguna disuruh menginput nama barang dan jumlah yang akan dibeli, setelah itu saya menggunakan if untuk menghitung harga dari total barang dan jenis barang yang sudah diinput pengguna
