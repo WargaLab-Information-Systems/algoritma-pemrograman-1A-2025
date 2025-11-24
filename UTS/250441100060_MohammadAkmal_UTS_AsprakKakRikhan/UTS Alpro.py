@@ -1,5 +1,5 @@
 total_belanja = 0
-pembelian =0
+pembelian = 0
 member_card = 0
 pelanggan = 1
 harga_barang = 0
@@ -7,7 +7,7 @@ harga_barang = 0
 print("="*50)
 print("             Toko Sembako Maju Jaya          ")
 print("-"*50)
-print("Silahkan masukkan belanjaan anda")
+print("Silahkan masukkan belanjaan anda\n")
 
 barang = []
 while barang == 1:
