@@ -1,12 +1,13 @@
 print("="*10, " TUGAS 3 MODUL 7 ", "="*10)
 
 kupon = {"UTM": 10, "YES": 20}
+
 while True:
     print("1. Lihat kupon")
     print("2. Transaksi")
     print("3. Keluar")
-    pilih = input("Pilih menu 1-3: ")
 
+    pilih = input("Pilih menu 1-3: ")
     if pilih == "1":
         if not kupon: print("Tidak ada kupon. ")
         for k, v in kupon.items(): print(k, "-", v, "%")
@@ -24,5 +25,8 @@ while True:
             print("kupon dihapus (tidak bisa dipakai lagi). ")
     elif pilih == "3":
         break
+
+
+    
 
     

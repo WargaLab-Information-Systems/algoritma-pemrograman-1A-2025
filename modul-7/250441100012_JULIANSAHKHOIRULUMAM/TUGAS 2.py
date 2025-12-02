@@ -1,6 +1,7 @@
 print("="*10," TUGAS 2 MODUL 7 ","="*10)
 
 gudang = {}
+
 while True :
     print("1. Lihat Barang")
     print("2. Cari Barang")
@@ -30,7 +31,6 @@ while True :
                 else:
                     print("Stok tidak Boleh 0 Atau Negatif")
                     continue
-
     elif user == "4":
         id = input("ID: ")
         if id not in gudang: print("Tidak ditemukan. ")
@@ -49,3 +49,7 @@ while True :
     else:
         print("Silahkan Pilih Menu Menggunakan 1-6")
         continue
+
+
+
+    

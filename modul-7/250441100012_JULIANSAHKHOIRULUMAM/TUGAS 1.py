@@ -1,6 +1,7 @@
 print("="*10," TUGAS 1 MODUL 7 ","="*10)
 
 contact = {}
+
 while True :
     print("1. Lihat")
     print("2. Cari")
@@ -53,3 +54,7 @@ while True :
         print("Dihapus. " if contact.pop(n, None) else "Tidak ditemukan. ")
     elif p == "6":
         break
+
+
+
+    
