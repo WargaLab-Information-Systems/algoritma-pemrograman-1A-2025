@@ -29,5 +29,3 @@ print("/n ---- Rincian Pembayaran ----")
 print(f"Harga Normal Tiket Adalah     : Rp{ tiket:,}")
 print(f"Diskon Yang Di Dapat Adalah  :{diskon * 100}%")
 print(f"Total Pembayaran Yang Harus Di Bayar Rp.{int(total):,}")
-
-
