@@ -8,6 +8,7 @@ while True:
     print("3. Keluar")
 
     pilih = input("Pilih menu 1-3: ")
+    
     if pilih == "1":
         if not kupon: print("Tidak ada kupon. ")
         for k, v in kupon.items(): print(k, "-", v, "%")
@@ -24,9 +25,4 @@ while True:
             del kupon[kode]
             print("kupon dihapus (tidak bisa dipakai lagi). ")
     elif pilih == "3":
-        break
-
-
-    
-
-    
+        break  

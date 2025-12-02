@@ -3,14 +3,16 @@ print("="*10," TUGAS 1 MODUL 7 ","="*10)
 contact = {}
 
 while True :
+    
     print("1. Lihat")
     print("2. Cari")
     print("3. Tambah")
     print("4. Update Email")
     print("5. Hapus")
     print("6. Keluar")
-    p = input("pilih menu 1-6: ")
 
+
+    p = input("pilih menu 1-6: ")
     if p == "1":
         if not contact: print("Belum ada kontak. ")
         for n, v in contact.items(): print(n, "-", v)
@@ -54,7 +56,3 @@ while True :
         print("Dihapus. " if contact.pop(n, None) else "Tidak ditemukan. ")
     elif p == "6":
         break
-
-
-
-    
