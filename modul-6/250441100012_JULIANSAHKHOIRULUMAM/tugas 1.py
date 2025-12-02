@@ -2,16 +2,13 @@ print("="*10," TUGAS 1 MODUL 6 ","="*10)
 
 data_kunjungan = []
 id = 1 
-
 while True:
     print("\n--- SISTEM KUNJUNGAN SANTRI ---")
     print("1. Tambah Data")
     print("2. Tampilkan Data")
     print("3. Hapus Data")
     print("4. Keluar")
-
     pilih = input("Pilih menu (1-4): ")
-
     if pilih == "1":
         pengunjung = input("Nama pengunjung: ")
         santri = input("Nama santri yang dijenguk: ")
@@ -22,7 +19,6 @@ while True:
                 break
             else:
                 print("Input salah! Pilih hanya antara Sumatra, Kalimantan, atau Jawa.")
-
         data_kunjungan.append([id, pengunjung, santri, daerah])
         print(f"Data berhasil ditambah dengan ID {id}")
         id += 1
@@ -58,6 +54,5 @@ while True:
     elif pilih == "4":
         print("Terima kasih, program selesai.")
         break
-
     else:
         print("Pilihan tidak valid! Silakan coba lagi.")

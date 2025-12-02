@@ -11,15 +11,12 @@ while True:
     print("6. Keluar")
 
     pilih = input("Pilih menu (1-6): ")
-
     if pilih == "1":
         angka = int(input("Masukkan angka: "))
         angka_list.append(angka)
         print("Angka ditambahkan.")
-
     elif pilih == "2":
         print("Daftar angka:", angka_list)
-
     elif pilih == "3":
         if not angka_list:
             print("Belum ada angka untuk diubah.")
@@ -34,7 +31,6 @@ while True:
                 print(f"Angka {angka_lama} berhasil diubah menjadi {angka_baru}.")
             else:
                 print("Angka tersebut tidak ditemukan di dalam daftar.")
-
     elif pilih == "4":
         if not angka_list:
             print("Belum ada angka yang bisa dihapus.")
@@ -45,8 +41,7 @@ while True:
                 angka_list.remove(angka_hapus)
                 print(f"Angka {angka_hapus} berhasil dihapus.")
             else:
-                print("Angka tersebut tidak ada dalam daftar.")
-                
+                print("Angka tersebut tidak ada dalam daftar.")      
     elif pilih == "5":
         if not angka_list:
             print("Belum ada angka di dalam daftar.")
@@ -54,9 +49,7 @@ while True:
             print("Daftar angka:", angka_list)
             
             total = sum(angka_list)
-            print(f"Jumlah total semua angka adalah: {total}")
-
-        
+            print(f"Jumlah total semua angka adalah: {total}")        
             if total % 2 != 0:
                 print("Tidak bisa dibagi dua bagian sama besar karena jumlahnya ganjil.")
             else:
