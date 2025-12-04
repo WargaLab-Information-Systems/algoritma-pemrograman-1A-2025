@@ -9,7 +9,6 @@ while True :
     print("4. Update Stok")
     print("5. Hapus Barang")
     print("6. Keluar")
-
     
     user = input("pilih menu 1-6: ")
     if user == "1":
@@ -51,3 +50,7 @@ while True :
     else:
         print("Silahkan Pilih Menu Menggunakan 1-6")
         continue
+
+
+
+    
